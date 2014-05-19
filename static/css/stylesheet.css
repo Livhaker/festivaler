@@ -1,0 +1,182 @@
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+#annonse1 {
+	border: 1px solid red;
+}
+
+.btn-font {
+font-size: 2em;
+
+}
+
+.festivalknapp {
+	padding: 10px;
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+
+
+}
+
+.festivaldata{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: white;
+	float: bottom;
+	visibility: hidden;
+
+}
+
+.datacontainer{
+position: relative;
+width: 100%;
+}
+
+.overskrift{
+	font-size: 2em;
+	color: black;
+}
+
+.tile{
+background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg");
+
+}
+
+.velg {
+	background-color: white;
+	border-radius: 30px;
+	border: 10px solid black;
+
+}
+
+.h2-break{
+	position:relative;
+	display:block;
+	margin:35px 0 15px;
+	font-size:1em;
+	letter-spacing:0.21em;
+	font-weight:500;
+	text-transform:uppercase;
+	color:#555555;
+	text-align:center
+}
+
+.knapp{
+margin-top: 15px;
+}
+
+.knapp2{
+margin: 1px;
+}
+
+.logoB{
+width: 80%;
+min-width: 128px;
+max-width: 600px;
+margin-top: -40px;
+}
+
+.logoBmobil	{
+width: 80%;
+min-width: 128px;
+max-width: 600px;
+}
+
+
+.overskrift-detalj{
+	font-size: 3em;
+	color: black;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.overskrift2-detalj{
+	font-size: 1.5em;
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.overskrift3-detalj{
+	font-size: 2em;
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.overskrift-story{
+	font-size: 2em;
+	font-style: bold;
+	text-transform:uppercase;
+	color: black;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.brod-story{
+	font-size: 1.5em;
+	color: black;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+
+#wrapper {
+    width: 100%;
+    overflow: hidden; /* will contain if #first is longer than #second */
+    margin-bottom: 5%
+}
+#first {
+    width: 50%;
+    float:left; /* add this */
+}
+#second {
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+.footertekst{
+	color: white;
+	font-size:1em;
+	text-align: center;
+	margin-top: 1%;
+}
+
+.svartfelt{
+	background-color: black;
+	padding-top: 50px
+}
+
+.svartfelttekst{
+	font-size: 1em;
+	padding-left: 10%;
+	padding-right:10%;
+	text-align: center;
+	color: white;
+}
+}
+
+.brodtekst{
+	margin: 40px;
+	text-align: center;
+	font-size: 0.75em;
+}
+
+.festivalrute{
+	min-width: 292px;
+	min-height: 266px;
+}

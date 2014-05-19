@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto+Slab|Dosis' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="http://interaktiv.smp.no/2014/Festivaler/main.css"/>
-    <link rel="shortcut icon" type="image/png" href="http://interaktiv.smp.no/2014/Festivaler/images/favF.png"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css"/>
+    <link rel="shortcut icon" type="image/png" href="/static/images/favF.png"/>
     
     <meta charset="utf-8">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js">
@@ -41,7 +41,7 @@
           </span>
         </button>
         <a class="navbar-brand" href="http://www.smp.no" target="_blank">
-          <img src="http://interaktiv.smp.no/2014/Festivaler/images/S.png">
+          <img src="/static/images/S.png">
         </a>
         
       </div>
@@ -87,23 +87,37 @@
   <body style= "background-color:#fffff;padding-top:70px;font-family:Dosis;">
     <div class="container">
       <!--Annonse-->
-      <img  class="displayed" style="width:100%;margin-top:-20px;margin-bottom:-40px"src="http://interaktiv.smp.no/2014/Festivaler/images/Annonse.jpg" />
-      
-            
+      <img  class="displayed" style="width:100%;margin-top:-20px;"src="/static/images/Annonse.jpg" />
+                  
       <a name="guide">
       </a>
       
-      
-      
-      <!--mobil-->
+     <!--mobillogo start-->
       <div class="h2-break">
         <div class="hidden-sm hidden-md hidden-lg">
-          <img class="logoB" src="http://interaktiv.smp.no/2014/Festivaler/images/logoBxs.png" />
+          <img style="margin-top:-60px" width="100%" src="/static/images/vimpler.jpg" />
+          <img class="logoBmobil" src="/static/images/logoBxs.png" />
           <hr>
+        </div>
+      </div> 
+     <!--mobillogo end-->
+
+    <!--desktoplogo start-->
+    <div class="h2-break">
+      <div class="hidden-xs">
+        <img style="margin-top:-60px" width="100%" src="/static/images/vimpler.jpg" />
+        <img class="logoB" src="/static/images/logoB.png" />
+        <hr>
+      </div>
+    </div>
+    <!--desktoplogo end-->
           
-          <a name="velg">
-          </a>
+      <a name="velg">
+      </a>
+      
+      <!--mobilknapper start-->
           <div class="h2-break">
+            <div class="hidden-sm hidden-md hidden-lg">
             <p>
               
               <span>
@@ -186,17 +200,13 @@
           </p>
           
         </div>
-      </div> <!--end mobil-->
+      </div>
     
-    <div class="h2-break">
-      <div class="hidden-xs">
-        <img width="100%" src="http://interaktiv.smp.no/2014/Festivaler/images/vimpler.jpg" />
-        <img class="logoB" src="http://interaktiv.smp.no/2014/Festivaler/images/logoB.png" />
-        <hr>
-        
-        <a name="velg">
-        </a>
+      <!--mobilknapper end-->
+
+    <!--desktopknapper start-->
         <div class="h2-break">
+          <div class="hidden-xs">
           <p>
             <span>
               
@@ -278,8 +288,8 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>  
+  <!--desktopknapper end-->
+
     <!--start test columns-->
     
     <!---Start liste-->
@@ -292,7 +302,7 @@
       <div class="row">
          {% for obj in object_list %}
                   <div class="col-lg-3 col-md-4 col-sm-6 festivalrute">
-                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="http://interaktiv.smp.no/2014/festivaler/images/{{obj.id}}.jpg" style="width: 140px; height: 140px;">
+                  <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/{{obj.id}}.jpg" style="width: 140px; height: 140px;">
                   <h3>{{ obj.name }}</h3>
                   <p><a class="btn btn-default" href="{{ obj.id }}" role="button">Les mer »</a></p>
               </div>
@@ -350,7 +360,7 @@ hidden-xs">
       Copyright: Sunnmørsposten 2014. 
       <br>
       <br>
-      <img src="http://interaktiv.smp.no/2014/Festivaler/images/smp.png">
+      <img src="/static/images/smp.png">
       
     </p>
     
