@@ -21,6 +21,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   
+  <!-- 
+
+id
+name
+datestart
+dateend
+place
+x
+y
+organizer
+site
+pop
+rock
+metal
+indie
+jazz
+blues
+folk
+country
+dancing
+rap-hip-hop
+classical
+other
+bygdefestival
+teaterrevyhumor
+lineup
+shows profile ticketsprize
+sone1 (0-500) sone2 (500-1000)
+sone3 (1000-1500) sone4 (1500+) sone5 (dagspass)
+sone6 (todagerspass)
+sone7 (undgomspass) sone 8 (gratis for barn)
+free
+discount
+age alcohol budget
+sponsors
+estaudience forchildren barnevennlig
+food-drink
+camptype
+camp
+transportationtype
+transportation
+market
+disabledtype
+disabled
+sanitary
+paid-staff
+unpaidstaff anno
+more
+Ferdig
+Ansvar
+
+
+  -->
   
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -80,7 +133,9 @@
               Festivalen for deg er:
             </div>
   
-    <h1 class="overskrift-detalj"> Back in the fields Rock Festival</h1> <h3 class="overskrift2-detalj">8.-9. august på Flatholmen i Ålesund</h3>
+    <h1 class="overskrift-detalj">{{object.name}}}</h1> <h3 class="overskrift2-detalj">{{object.datestart}}-{{object.dateend}},<br>
+{{object.place}}
+    </h3>
          </div><!--end containter-->
 
     <div class="h2-break">
@@ -131,10 +186,10 @@
     </div>
   </div>
   <hr>
-  <div class="overskrift3-detalj">Årets artister: <br> Black Star Riders, Spitfire, Iron Maiden Tribute, Valentourettes, The Carburetors, Drusar, Slegest, Wasteland Rocks, Norse Super Band, HellHikers.<br></div>
+  <div class="overskrift3-detalj">Årets artister: <br> {{object.lineup}}<br></div>
   <hr>
   <div class="overskrift-story">Arrangøren forteller:</div> 
-  <div class="brod-story">Back in The Fields Rock Festival er Ålesunds eneste reindyrka rock & roll-festival. Vi leverer det vi lover, og du blir ikke skuffa! Back In The Fields Rock Festival er og skal fortsette å være en scene for de etablerte internasjonale, samt både de store og fremadstormende nasjonale og lokale unge. Og av overskuddet gis det tilbake til det unge musikkmiljøet i Ålesund og omegn.</div>
+  <div class="brod-story">{{object.profile}}</div>
   <hr>
 
 <table class="table table-bordered">
@@ -149,7 +204,7 @@
 </table>
 
 
-    <div><img style="width:100%;" src="http://interaktiv.smp.no/2014/Festivaler/images/1b.jpg"></div>
+    <div><img style="width:100%;" src="http://interaktiv.smp.no/2014/Festivaler/images/{{object.id}}b.jpg"></div>
     
     </div>
 <div>
