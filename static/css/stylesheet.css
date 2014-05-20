@@ -56,6 +56,17 @@ background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg"
 
 }
 
+.h1-break{
+	position:relative;
+	display:block;
+	margin:35px 0 15px;
+	letter-spacing:0.21em;
+	font-weight:500;
+	text-transform:uppercase;
+	color:#555555;
+	text-align:center
+}
+
 .h2-break{
 	position:relative;
 	display:block;
@@ -91,14 +102,14 @@ max-width: 600px;
 
 
 .overskrift-detalj{
-	font-size: 3em;
+	font-size: 5em;
 	color: black;
 	text-align: center;
 	margin-top: 50px;
 }
 
 .overskrift2-detalj{
-	font-size: 1.5em;
+	font-size: 2em;
 	color: black;
 	text-align: center;
 	margin-bottom: 10px;
@@ -134,12 +145,15 @@ max-width: 600px;
 	margin-right: 20%;
 }
 
-
+#detaljbilde {
+    width: 100%;
+    padding-bottom: 50px;
+}
 
 #wrapper {
     width: 100%;
     overflow: hidden; /* will contain if #first is longer than #second */
-    margin-bottom: 5%
+    margin-bottom: 5%;
 }
 #first {
     width: 50%;
@@ -179,4 +193,9 @@ max-width: 600px;
 .festivalrute{
 	min-width: 292px;
 	min-height: 266px;
+}
+
+.detaljtopp{
+width:100%;
+margin-top: -70px;
 }
