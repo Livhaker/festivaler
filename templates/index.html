@@ -14,8 +14,6 @@
     </script>
     <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js">
     </script>
-    <script type="text/javascript" src="http://interaktiv.smp.no/2014/Festivaler/js/pym.js" >
-    </script>
     
     
     <!--  Mobilview først-->
@@ -66,6 +64,16 @@
             </a>
           </li>
           <li>
+            <a href="#sendinn">
+              SEND INN
+            </a>
+          </li>
+          <li>
+            <a href="#some">
+              #SMPFESTIVAL
+            </a>
+          </li>
+          <li>
             <a href="#om">
               OM
             </a>
@@ -76,12 +84,7 @@
     </div>
     <!-- /.container-fluid -->
   </nav>
-  
-  
-  
-<a href="/testlarallax.html">parallaxtest</a>
-  
-  
+ 
   
   <!--Body start-->
   <body style= "background-color:#fffff;padding-top:70px;font-family:Dosis;">
@@ -317,7 +320,45 @@
   <!-- /.container marketing-->
   <!--End liste-->
   <!--/ .container-->
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+   <a name="sendinn">
+   </a>
+  <!--skjema desktop-->
+<div>
+  <h1>SEND INN DIN FESTIVAL</h1>
+  <h3>Sunnmørsposten vil gjerne ha med alle festivaler, bygdedager og martnadager i festivalguiden. Mangler din festival? Send inn skjemaet og du vil bli kontaktet for detaljer.</h3>
+  <form role="form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Navn på festival">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Dato for festival">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Ditt navn">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Ditt telefonnummer">
+  </div>
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<!--end skjema desktop-->
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
 
+
+    <a name="some">
+    </a>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
@@ -347,10 +388,12 @@ hidden-xs">
   </div>
 </div>
 
-<!--footer-->
-<a name="om">
-</a>
-<nav class="navbar navbar-default navbar-bottom" role="navigation" style="background-color:black;height:600px">
+<br>
+
+    <a name="om">
+    </a>
+<!--footer destop-->
+ <nav class="navbar navbar-default navbar-bottom hidden-xs" role="navigation" style="background-color:black;height:600px">
   <div class="container">
     <p class="footertekst">
       <br>
@@ -363,11 +406,30 @@ hidden-xs">
       <br>
       <br>
       <img src="/static/images/smp.png">
-      
-    </p>
-    
+    </p>   
   </div>
 </nav>
+<!--end footer destop-->
+
+<!--footer mobil-->
+ <nav class="navbar navbar-default navbar-bottom hidden-sm hidden-md hidden-lg" role="navigation" style="background-color:black;height:300px">
+  <div class="container">
+    <p class="footertekstmobil">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <br>
+      <img src="/static/images/smpmobil.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer mobil-->
 
 
         <script type="text/javascript">
@@ -385,7 +447,7 @@ hidden-xs">
                 {
                   "type": "Feature",
                   "properties": {
-                    "festival": "{{ obj.festival }}",
+                    "festival": "{{ obj.name}}",
                     "id": "{{ obj.id }}"
                   },
                   "geometry": {
@@ -400,7 +462,7 @@ hidden-xs">
                 onEachFeature: function(feature, layer) {
                     layer.bindPopup(
                         '<a href="' + feature.properties.id + '/">' +
-                            feature.properties.full_name +
+                            feature.properties.festival +
                         '</a>'
                     );
                 }
@@ -408,11 +470,6 @@ hidden-xs">
             map.addLayer(dataLayer);
         </script>
 
-        <!--pym.js-script!-->
-<script type="text/javascript" src="pym.js"></script>
-<script>
-    var pymParent = new pym.Parent('example-1', 'http://www.vimeo.com/player.vimeo.com/video/46082080', {});
-    var second = new pym.Parent('example-2', 'http://interaktiv.smp.no/2014/rbr/rbrlogo.html', {});
-</script>
+
     </body>
 </html>

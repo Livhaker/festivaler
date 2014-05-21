@@ -72,164 +72,312 @@ Ansvar
 
 
   -->
-  
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">
-            Toggle navigation
-          </span>
-          <span class="icon-bar">
-          </span>
-          <span class="icon-bar">
-          </span>
-          <span class="icon-bar">
-          </span>
-        </button>
-        <a class="navbar-brand" href="http://www.smp.no" target="_blank">
-          <img src="/static/images/S.png">
-        </a>
-        
-      </div>
+
+
+<!--navigasjon-->  
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">
+          Toggle navigation
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+      </button>
+      <a class="navbar-brand" href="http://www.smp.no" target="_blank">
+        <img src="/static/images/S.png">
+      </a>
       
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="/">
-              TILBAKE TIL FESTIVALGUIDEN
-            </a>
-          </li>
-           <li>
-            <a href="#din">
-                DIN FESTIVAL
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-
-
-  <div>
-
-<img class="detaljtopp"src="/static/images/detaljtopp.jpg"/>
-</div>
-  <!--Body start-->
-
-  <body style= "background-color:#fffff;padding-top:70px;font-family:Dosis">
-    <div class="container">
-       <!--<div>
-        <img  class="displayed" style="width:100%;margin-top:-20px"src="/static/images/Annonse.jpg" />
-      </div>-->
-            <a name="din"> </a>
-  <div id="detaljbilde"> <h1 class="overskrift-detalj">{{object.name}}</h1> <h3 class="overskrift2-detalj">{{object.datestart}}-{{object.dateend}},<br>
-{{object.place}}
-    </h3></div>
-         
-  <div id="detaljbilde"> <img style="width:100%;" src="/static/images/{{object.id}}b.jpg"/></div>
-
-
-         </div>
-
-         <!--end containter-->
-
-    <!--<div class="h2-break">
-      <div class="hidden-xs">
-                
     
-        <div class="h2-break">
-          
-            <span>
-              
-              <div class="h2-break">
-                DENNE FESTIVALEN OPPFYLLER DISSE KRITERIENE:
-              </div>
-              
-            </span>
-            <p>
-              <button type="button" class="btn btn-warning btn-lg knapp">
-                JUNI
-              </button>
-              <button type="button" class="btn btn-danger btn-lg knapp">
-                MUSIKK: ROCK, POP.
-              </button>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="/">
+            TILBAKE TIL FESTIVALGUIDEN
+          </a>
+        </li>
+        <li>
+          <a href="#din">
+            DIN FESTIVAL
+          </a>
+        </li>
+        <li>
+          <a href="#program">
+            ÅRETS PROGRAM
+          </a>
+        </li>
+        <li>
+          <a href="#omdenne">
+            OM FESTIVALEN
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!--end navigasjon-->
 
-              <button type="button" class="btn btn-success btn-lg knapp">
-                OPP TIL 500 kr.
-              </button>             
-              <button type="button" class="btn btn-success btn-lg knapp">
-                FESTIVALPASS
-              </button>
-              <button type="button" class="btn btn-info btn-lg knapp">
-                BARNEVENNLIG FESTIVAL
-              </button>
-              
-              <button type="button" class="btn btn-info btn-lg knapp">
-                FESTIVALCAMP
-              </button>
-              
-              <button type="button" class="btn btn-info btn-lg knapp">
-                TILBYR TRANSPORT
-              </button>
-              <button type="button" class="btn btn-info btn-lg knapp">
-                TILRETTELAGT FOR FUNKSJONSHEMMEDE
-              </button>
-          </p>
-        </div>
-      </div>
+
+
+
+
+
+
+
+<!--Introbilde for desktop-->
+<div id="container" class="bilde hidden-xs">
+  <div class="bgbilde">
+    <img style="width:100%"src="/static/images/Topp/{{object.id}}a.jpg"/>
+    <div class="fgbilde">
+      <img style="width:100%"src="/static/images/detaljtopp.png"/>
     </div>
   </div>
--->
+</div>
+<!--End introbilde for desktop-->
+
+<!--Introbilde for mobil-->
+<div id="container" class="bilde hidden-sm hidden-md hidden-lg">
+  <div class="bgbilde">
+    <img style="width:100%"src="/static/images/Topp/{{object.id}}a.jpg"/>
+    <div class="fgbilde">
+      <img style="width:100%"src="/static/images/detaljtopp-mobil.png"/>
+    </div>
+  </div>
+</div>
+<!--End ntrobilde for mobil-->
 
 
 
 
-  <hr>
-  <div class="overskrift3-detalj">Årets artister: <br> {{object.lineup}}<br></div>
-  <hr>
-  <div class="overskrift-story">Arrangøren forteller:</div> 
-  <div class="brod-story">{{object.profile}}</div>
-  <hr>
-
-<table class="table table-bordered"">
-    <tr>
-  <td class="active"Billetter</td>  
-  <td class="active">Aldersgrense</td>  
-  <td class="active">For barna</td>  
-  <td class="active">Forventa publikum</td>
-  <td class="active">Tilrettelagt for funksjonshemma</td>  
-  </tr>
-  <tr>
-  <td class="active">{{object.discount}}</td>
-  <td class="success">{{object.age}}</td>
-  <td class="warning">{{object.forchildren}}</td>
-  <td class="danger">{{object.estaudience}}</td>
-  <td class="info">{{object.disabledtype}}</</td>
-</tr>
-
-</table>
 
 
 
+
+<!--Body start-->
+<body style= "background-color:#fffff;padding-top:70px;font-family:Dosis"> 
+  <a name="din">
+  </a>
+    <!--Festivalnavn for desktop-->
+  <div class="margin hidden-xs">
     
+    <br>
+    <p class="festivalnavn hidden-xs">
+      {{object.name}}
+    </p>
     </div>
-<div>
-<div class="container brodtekst">
-       tekst
-     </div><!--end containter-->
-<div> <div> Billetter: <br> Fredagspass 729,- Lørdagspass 834,- Helgepass 1244,-<br>
-  Aldersgrense:<br> 18 år (ingen aldersgrense på barneprogrammet).</div>
+    <div>
+    <p class="festivaldato hidden-xs">
+      {{object.datoen}},
+      <br>
+      {{object.place}}
+    </p>
     </div>
+    <!--End festivalnavn for desktop-->
+
+    <!--Festivalnavn for mobil-->
+  <div class="marginmobil hidden-sm hidden-md hidden-lg">
+    
+    <br>
+    <p class="festivalnavnmobil hidden-sm hidden-md hidden-lg">
+      {{object.name}}
+    </p>
     </div>
+    <div>
+    <p class="festivaldatomobil hidden-sm hidden-md hidden-lg">
+      {{object.datoen}},
+      <br>
+      {{object.place}}
+    </p>
+    </div>
+    <!--End festivalnavn for mobil-->
+
+
+
+
+
+
+
+    <a name="program">
+    </a>
+    <!--Artister for desktop-->
+    <div class="svartfelt hidden-xs">
+      
+      <div class="headliners hidden-xs">
+        I år får du: 
+        <br>
+        {{object.lineup}}
+        <br>
+      </div>
+    </div>
+    <!--End artister for desktop-->
+
+    <!--Artister for mobil-->
+    <div class="svartfeltmobil hidden-sm hidden-md hidden-lg">
+      
+      <div class="headlinersmobil hidden-sm hidden-md hidden-lg">
+        I år får du: 
+        <br>
+        {{object.lineup}}
+        <br>
+      </div>
+
+    </div>
+    <!--End artister for mobil-->
+
+
+
+
+
+
+    <div id="container">
+      <img style="width:100%"src="/static/images/{{object.id}}b.jpg"/>
+    </div>
+
+
+
+  
+    
+    <!--sitat desktop-->
+    <div class="svartfelt hidden-xs">
+      <div class="sitat hidden-xs">
+        {{object.sitat}}
+        <br>
+      </div>
+    </div>
+    <!--sitat desktop end-->
+    <!--sitat mobil-->
+    <div class="svartfeltmobil hidden-sm hidden-md hidden-lg">
+      <div class="sitatmobil hidden-sm hidden-md hidden-lg">
+        {{object.sitat}}
+        <br>
+      </div>
+    </div>
+    <!--sitat mobil end-->
+
+
+
+
+    <p>
+      Annonse:
+    </p>
+    <img style="width:100%;"src="/static/images/Annonse.jpg" />
+    <a name="omdenne">
+      
+    </a>
+    <div style="padding:50px;"class="row">
+      <div class="col-md-6">
+        <h1>
+          Arrangøren forteller:
+        </h1>
+        
+        <br>
+        <p class="brod">
+          {{object.profile}} 
+          <br>
+          {{object.more}}
+        </p>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-5">
+        <h1>
+          Info om festivalen:
+        </h1>
+        <br>
+        <p class="brod">
+          <b>
+            Aldersgrense:
+          </b>
+          {{object.age}}
+          <br>
+          <b>
+            Billetter:
+          </b>
+          {{object.discount}}
+          <br>
+          <b>
+            For barna:
+          </b>
+          {{object.forchildren}}
+          <br>
+          <b>
+            For funksjonshemmede:
+          </b>
+          {{object.disabledtype}} 
+          <br>
+          
+          <b>
+            Marked:
+          </b>
+          {{object.market}}
+        </p>
+      </div>
+    </div>
+    
     <div class="container">
-     <div id="map" style="width:100%; height:300px;"></div>
-     </div><!--end containter-->
+      <div>
+        <h3>
+          {{object.name}} er her:
+        </h3>
+      </div>
+      <div id="map" style="width:100%; height:300px;">
+      </div>
+    </div>
+    <!--end containter-->
+
+
+<br>
+
+    <a name="om">
+    </a>
+<!--footer destop-->
+ <nav class="navbar navbar-default navbar-bottom hidden-xs" role="navigation" style="background-color:black;height:600px">
+  <div class="container">
+    <p class="footertekst">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <img src="/static/images/smp.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer destop-->
+
+<!--footer mobil-->
+ <nav class="navbar navbar-default navbar-bottom hidden-sm hidden-md hidden-lg" role="navigation" style="background-color:black;height:300px">
+  <div class="container">
+    <p class="footertekstmobil">
+      <br>
+      <br>
+      Festivalguiden er levert av Sunnmørsposten. 
+      <br>
+      Tekst og bilder er hentet fra festivalarrangørene, og var hovedsaklig levert før 1. mai 2014. Forbehold om endringer. 
+      <br>
+      Copyright: Sunnmørsposten 2014. 
+      <br>
+      <br>
+      <br>
+      <img src="/static/images/smpmobil.png">
+    </p>   
+  </div>
+</nav>
+<!--end footer mobil-->
 
 
 
@@ -237,13 +385,7 @@ Ansvar
 
 
 
-
-
-
-
-
-
-        <script type="text/javascript">
+       <script type="text/javascript">
             var map = L.map('map').setView([{{ object.y }}, {{ object.x }}], 15);
             var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
                 maxZoom: 18,
