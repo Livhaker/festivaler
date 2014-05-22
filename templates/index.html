@@ -86,11 +86,11 @@
   </nav>
  
   
-  <!--Body start-->
-  <body style= "background-color:#fffff;padding-top:70px;font-family:Dosis;">
-    <div class="container">
 
-<!--annonsescript-->
+
+
+<!--annonsescript desktop-->
+<div class="annonse hidden-xs">
 <script type="text/javascript">
 document.write('' +
     '<scr' + 'ipt type="text/javascript">\n' +
@@ -101,8 +101,32 @@ document.write('' +
 </script>
 <script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
 <script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
-<!--annosesscript end-->
+</div>
+<!--end annosesscript desktop-->
 
+<!--annonsescript mobil-->
+<div class="annonse hidden-sm hidden-md hidden-lg">
+<script type="text/javascript">
+document.write('' +
+    '<scr' + 'ipt type="text/javascript">\n' +
+    'var cx_props = {\n' +
+    '    adSpaceId: "000000016009a280"\n' +
+    '};\n' +
+    '</scr' + 'ipt>\n');
+</script>
+<script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
+<script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
+ <!--end annonsescript mobil-->
+</div>
+
+
+
+
+
+
+<!--Body start-->
+  <body style= "background-color:#fffff;padding-top:70px;font-family:Dosis;">
+    <div class="container">
       <!--Annonse-
       <img  class="displayed" style="width:100%;margin-top:-20px;"src="/static/images/Annonse.jpg" />
                   -->
@@ -554,6 +578,51 @@ hidden-xs">
             map.addLayer(dataLayer);
         </script>
 
+<!-- Start OLD TNS: -->
+<script type="text/javascript">
+/*<![CDATA[*/
+var sp_e0 = {
+"s":"polaris",
+"cp":"polaris/smp/forsiden",
+"url": "http://www.smp.no/"
+}
+spring.c(sp_e0);
+/*]]>*/
+</script>
+<noscript>
+<img src="http://polaris.tns-cs.net/j0=,,,;+,cp=polaris/smp/forsiden+url=http://www.smp.no/;;;" />
+</noscript>
+<!-- End OLD TNS -->
+<!-- Start GA -->
+<script type="text/javascript">
+// <![CDATA[
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+try {
+var pageTracker = _gat._getTracker("UA-35932862-1");
+pageTracker._setDomainName(".smp.no");
+pageTracker._trackPageview();
+} catch(err) {}
+// ]]>
+</script>
+<!-- End GA -->
+<!-- cXense script begin -->
+<div id="cX-root" style="display:none"></div>
+<script type="text/javascript">
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cX.callQueue.push(['setAccountId', '9222304501162645932']);
+cX.callQueue.push(['setSiteId', '9222304501162645933']);
+cX.callQueue.push(['sendPageViewEvent']);
+</script>
+<script type="text/javascript">
+(function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async';
+scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js';
+var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {};} ());
+</script>
+<!-- cXense script end -->
 
     </body>
 </html>

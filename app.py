@@ -3,7 +3,6 @@ import urllib2
 import sys
 from flask import Flask
 from flask import render_template
-import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 app = Flask(__name__)

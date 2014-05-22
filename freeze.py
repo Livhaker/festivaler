@@ -1,6 +1,9 @@
+import sys
+reload(sys)
 from flask_frozen import Freezer
 from app import app, csv_list
 freezer = Freezer(app)
+
 
 @freezer.register_generator
 def detail():
