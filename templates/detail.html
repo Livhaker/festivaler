@@ -111,7 +111,7 @@ Ansvar
         </li>
         <li>
           <a href="#program">
-            ÅRETS PROGRAM
+            ÅRETS FESTIVAL
           </a>
         </li>
         <li>
@@ -226,7 +226,7 @@ document.write('' +
     <div class="svartfelt hidden-xs">
       
       <div class="headliners hidden-xs">
-        I år får du: 
+        {{object.lineuptxt}} 
         <br>
         {{object.lineup}}
         <br>
@@ -280,59 +280,105 @@ document.write('' +
 
 
 
-      
+        <a name="omdenne">
+  </a>
     </a>
     <div style="padding:50px;"class="row">
-      <div class="col-md-12">
-        <h1>
+      <div class="col-md-12" style="text-align:center">
+        <p class="listehead">
           Arrangøren forteller:
-        </h1>
-        
-        <br>
+        </p>
         <p class="brod">
-          {{object.profile}} 
+          {{object.profile}} {{object.more}}
           <br>
-          <br>
-          {{object.more}}
-          <br>
-          <p>Arrangør: {{object.organizer}}.</p>
+          <p class="arrangor avstand"><i>Arrangør: {{object.organizer}}.</i></p>
         </p>
       </div>
-      <div class="col-md-12" style="margin-top:30px">
-        <h1>
-          Info om festivalen:
-        </h1>
-        <br>
+      <div class="col-md-12" style="text-align:center margin-top:30px">
+        <p class="listehead brod">
+          {{object.info}}
+        </p>
         <p class="brod">
-          <b>
-            Aldersgrense:
+          <b class="avstand">
+           {{object.agetxt}}
           </b>
           {{object.age}}
           <br>
-          <b>
-            Billetter:
+          <b class="avstand">
+            {{object.discounttxt}}
           </b>
           {{object.discount}}
           <br>
-          <b>
-            For barna:
+          <b class="avstand">
+            {{object.forchildrentxt}}
           </b>
           {{object.forchildren}}
           <br>
-          <b>
-            For funksjonshemmede:
+          <b class="avstand">
+            {{object.disabledtypetxt}}
           </b>
           {{object.disabledtype}} 
           <br>
-          
-          <b>
-            Marked:
+          <b class="avstand">
+            {{object.esttxt}}
+          </b>
+            {{object.estaudience}}
+            <br>
+         <b class="avstand">
+            {{object.markettxt}}
           </b>
           {{object.market}}
-        </p>
+        <br>
+         <b class="avstand">
+            {{object.camptypetxt}}
+          </b>
+            {{object.camptype}}
+            <br>
+            </p>
+            <p class="brod">
+          <a href="{{object.site}}"  target="_blank">Mer informasjon finner du på festivalen sin nettside.</a> 
+          </p>
       </div>
     </div>
-    
+
+
+
+
+    <a name="some">
+    </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23smpno" data-widget-id="466131340258074624">
+          Tweets om «#smpno»
+        </a>
+        
+        <script>
+          !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        
+      </div>
+      <div class="col-md-6 
+hidden-xs"><h3>
+          {{object.name}} er her:
+        </h3>
+  <div id="map" style="height:545px;max-width:520px">
+  </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+
+
+    <!--
     <div class="container">
       <div>
         <h3>

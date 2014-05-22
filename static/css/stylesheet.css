@@ -98,6 +98,11 @@ min-width: 128px;
 max-width: 600px;
 }
 
+.knappebredde{
+	margin-right: 150px;
+	margin-left:150px;
+}
+
 
 
 
@@ -272,6 +277,17 @@ left: 0px;
 
 .brod{
 	font-size: 1.5em;
+	text-align: center;
+}
+
+.arrangor{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.velkommen{
+	font-size: 1.5em;
+	text-align: center;
 }
 
 .margin{
@@ -289,4 +305,12 @@ left: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
+}
+
+.listehead{
+	font-size: 2em;
+
+}
+.avstand{
+	margin-bottom: 5px;
 }
