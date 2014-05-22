@@ -129,11 +129,6 @@ Ansvar
 
 
 
-
-
-
-
-
 <!--Introbilde for desktop-->
 <div id="container" class="bilde hidden-xs">
   <div class="bgbilde">
@@ -203,6 +198,24 @@ Ansvar
 
 
 
+<!--annonsescript-->
+<div class="annonse">
+<p>Annonse:</p>
+<script type="text/javascript">
+document.write('' +
+    '<scr' + 'ipt type="text/javascript">\n' +
+    'var cx_props = {\n' +
+    '    adSpaceId: "000000015fa39bc3"\n' +
+    '};\n' +
+    '</scr' + 'ipt>\n');
+</script>
+
+<script type="text/javascript" src="http://cdn.cxense.com/cx.js"></script>
+<script type="text/javascript" src="http://cdn.cxense.com/sync-ad.js"></script>
+</div>
+<!--annosesscript end-->
+
+
 
 
 
@@ -267,15 +280,10 @@ Ansvar
 
 
 
-    <p>
-      Annonse:
-    </p>
-    <img style="width:100%;"src="/static/images/Annonse.jpg" />
-    <a name="omdenne">
       
     </a>
     <div style="padding:50px;"class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <h1>
           Arrangøren forteller:
         </h1>
@@ -284,12 +292,13 @@ Ansvar
         <p class="brod">
           {{object.profile}} 
           <br>
+          <br>
           {{object.more}}
+          <br>
+          <p>Arrangør: {{object.organizer}}.</p>
         </p>
       </div>
-      <div class="col-md-1">
-      </div>
-      <div class="col-md-5">
+      <div class="col-md-12" style="margin-top:30px">
         <h1>
           Info om festivalen:
         </h1>
@@ -386,7 +395,7 @@ Ansvar
 
 
        <script type="text/javascript">
-            var map = L.map('map').setView([{{ object.y }}, {{ object.x }}], 15);
+            var map = L.map('map').setView([{{ object.y }}, {{ object.x }}], 10);
             var mapquestLayer = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
                 maxZoom: 18,
                 attribution: 'Data, imagery and map information provided by <a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>,<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.',

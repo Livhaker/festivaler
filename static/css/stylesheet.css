@@ -213,7 +213,7 @@ left: 0px;
 .festivalnavn{
 	color: black;
 	font-size: 4em;
-	margin-top: 100px;
+	margin-top: 20px;
 	text-align: center;
 }
 
@@ -221,7 +221,7 @@ left: 0px;
 	color: black;
 	font-size: 2em;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 
 }
 
@@ -275,12 +275,18 @@ left: 0px;
 }
 
 .margin{
-	margin: 10%;
-	line-height: 400%;
+	margin: 0%;
 
 }
 
 .marginmobil{
 	margin: 5%;
 
+}
+
+.annonse{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
 }
