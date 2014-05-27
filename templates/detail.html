@@ -143,7 +143,7 @@ Ansvar
 <!--Introbilde for mobil-->
 <div id="container" class="bilde hidden-sm hidden-md hidden-lg">
   <div class="bgbilde">
-    <img style="width:100%"src="/static/images/{{object.id}}a.jpg"/>
+    <img style="width:100%"src="/static/images/Topp{{object.id}}a.jpg"/>
     <div class="fgbilde">
       <img style="width:100%"src="/static/images/detaljtopp-mobil.png"/>
     </div>
@@ -306,50 +306,47 @@ document.write('' +
         <p class="brod" id="profile">
           {{object.profile}} {{object.more}}
           <br>
-          <p class="arrangor avstand"><i>Arrangør: {{object.organizer}}.</i></p>
+          <p class="arrangor"><i>Arrangør: {{object.organizer}}.</i></p>
         </p>
       </div>
       <div class="col-md-12" style="text-align:center margin-top:30px">
-        <p class="listehead brod">
-          {{object.info}}
-        </p>
         <p class="brod">
           <b class="avstand">
            {{object.agetxt}}
           </b>
           {{object.age}}
-          <br>
+    
           <b class="avstand">
             {{object.discounttxt}}
           </b>
           {{object.discount}}
-          <br>
+    
           <b class="avstand">
             {{object.forchildrentxt}}
           </b>
           {{object.forchildren}}
-          <br>
+    
           <b class="avstand">
             {{object.disabledtypetxt}}
           </b>
           {{object.disabledtype}} 
-          <br>
+    
           <b class="avstand">
             {{object.esttxt}}
           </b>
             {{object.estaudience}}
-            <br>
+      
 
          <b class="avstand">
             {{object.markettxt}}
           </b>
           {{object.market}}
-        <br>
+  
          <b class="avstand">
             {{object.camptypetxt}}
           </b>
             {{object.camptype}}
-            <br>
+      
           <b class="avstand">
             {{object.transportationtxt}}
           </b>
