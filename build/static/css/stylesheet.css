@@ -1,4 +1,12 @@
 
+ @media (max-width: 768px) {
+  .btn{
+    padding:5px 10px;
+    font-size:12px;
+    line-height:1.5;
+    border-radius:3px
+  }
+}
 
 
 .displayed {
@@ -67,7 +75,7 @@ background-image: url("http://interaktiv.smp.no/2014/Festivaler/images/tile.jpg"
 
 
 .knapp{
-margin: 15px 2px 2px;
+margin: 5px 2px 2px;
 }
 
 .knapp2{
@@ -296,7 +304,7 @@ text-align: center;
 
 }
 
-.annonse img{
+.annonse{
 width: 100%;
 max-width: 1150px;
 height: auto;
@@ -342,4 +350,10 @@ z-index: 99 !important;
 
 .btn-info.active {
    border-color: #000;background-color: #303030;
+}
+
+        div.addthis_toolbox {
+        width: 242px;
+        margin: 0 auto;
+        margin-top: 120px;
 }
