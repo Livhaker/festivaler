@@ -207,7 +207,8 @@ document.write('' +
               <button type="button" class="btn btn-danger btn-lg knapp" data-filter=".musikk" data-filter-group="sjanger">MUSIKK</button>
               <button type="button" class="btn btn-danger btn-lg knapp" data-filter=".bygdefestival" data-filter-group="sjanger">BYGDEFESTIVAL</button>
               <button type="button" class="btn btn-danger btn-lg knapp" data-filter=".teaterrevyhumor" data-filter-group="sjanger">TEATER/REVY/HUMOR</button>
-              <button type="button" class="btn btn-danger btn-lg knapp" data-filter=".matnaturhistorie" data-filter-group="sjanger">KUNST/LITTERATUR</button>
+              <button type="button" class="btn btn-danger btn-lg knapp" data-filter=".kunstlitteratur" data-filter-group="sjanger">KUNST/LITTERATUR</button>
+              <button type="button" class="btn btn-danger btn-lg knapp" data-filter=".matnaturhistorie" data-filter-group="sjanger">MAT/NATUR/HISTORIE</button>
               </div>
 
               <div id="kostnad" class="button-group"><button type="button" class="btn btn-success btn-lg knapp" data-filter=".sone1" data-filter-group="kostnad">GRATIS
@@ -262,6 +263,9 @@ document.write('' +
           {%endif%}
           {%if obj.teaterrevyhumor=='1'%}
             {%set filters = filters +' teaterrevyhumor'%}
+          {%endif%}
+         {%if obj.kunstlitteratur=='1'%}
+            {%set filters = filters +' kunstlitteratur'%}
           {%endif%}
           {%if obj.matnaturhistorie=='1'%}
             {%set filters = filters +' matnaturhistorie'%}
