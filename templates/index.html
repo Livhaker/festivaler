@@ -301,7 +301,7 @@ document.write('' +
           {%endif%}
                  <div class="col-lg-3 col-md-4 col-sm-6 festivalrute element-item {{filters}}">
                   <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="/static/images/{{obj.id}}.jpg" style="width: 140px; height: 140px;"/>
-                  <h3>{{ obj.name }}</h3>
+                  <h3>{{ obj.name }}</h3><p>{{obj.datoen}}</p>
                   <p><a class="btn btn-default" href="{{ obj.id }}" role="button">Les mer »</a></p>
               </div>
           {% endfor %}
