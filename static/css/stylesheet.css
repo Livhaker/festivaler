@@ -148,9 +148,14 @@ min-width: 128px;
 .footertekst{
 	color: white;
 	text-align: center;
-	margin-top: 1%;
 }
 
+.footertekststor{
+	color: white;
+	font-size: 1.25em;
+	text-align: center;
+	margin: 5%; 
+}
 .footertekstmobil{
 	color: white;
 	text-align: center;
@@ -305,6 +310,12 @@ text-align: center;
 }
 
 .annonse{
+width: 100%;
+max-width: 1150px;
+height: auto;
+}
+
+.annonse img{
 width: 100%;
 max-width: 1150px;
 height: auto;
